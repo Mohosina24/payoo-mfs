@@ -17,7 +17,7 @@
                 <div class="stats shadow">
                     <div class="stat">
                       <div class="stat-title text-xl font-bold">Total Balance</div>
-                      <div class="stat-value">9400</div>
+                      <div id="account-balance" class="stat-value">9400</div>
                      
                     </div>
                   </div>
@@ -29,8 +29,8 @@
                    </div>
                   <div class="divider"></div>
                   <!-- feature end -->
-                   <!-- form start -->
-                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                   <!-- form add money start -->
+                   <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -50,12 +50,35 @@
                       </div>
                     </form>
                   </div>
-                   <!-- form end -->
+                   <!-- form add-money end -->
+                    <!-- form cash out start -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text"> Cash Out Amount</span>
+                            </label>
+                            <input id="cash-out-amount" type="text" placeholder="enter your amount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Password</span>
+                            </label>
+                            <input id="cash-out-pin" type="password" placeholder="pin code " class="input input-bordered" required />
+                           
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                    <!-- form cash out end -->
               </div>
             </div>
           </div>
     </main>
     <script src="js/utilitics.js"></script>
     <script src="js/add-money.js"></script>
+    <script src="js/cash-out.js"></script>
 </body>
 </html>
