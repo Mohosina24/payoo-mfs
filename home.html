@@ -9,9 +9,53 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main>
-        
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title text-xl font-bold">Total Balance</div>
+                      <div class="stat-value">9400</div>
+                     
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <!-- feature start -->
+                   <div>
+                    <button id="add-money-btn" class="btn btn-lg">Add Money</button>
+                    <button id="cash-out-btn" class="btn btn-lg">Cash Out</button>
+                   </div>
+                  <div class="divider"></div>
+                  <!-- feature end -->
+                   <!-- form start -->
+                   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="input-amount" type="text" placeholder="enter your amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-pin" type="password" placeholder="enter pin code" autocomplete="off" class="input input-bordered" required />
+                      
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-money" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                   <!-- form end -->
+              </div>
+            </div>
+          </div>
     </main>
+    <script src="js/utilitics.js"></script>
     <script src="js/add-money.js"></script>
 </body>
 </html>
